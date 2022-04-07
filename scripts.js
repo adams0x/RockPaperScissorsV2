@@ -78,7 +78,7 @@ function calcWinner(userSelection, computerSelection){
         userIsWinner = 2;
     }
 
-    if(userAttempts>=3){
+    if(userAttempts>=3 || userIsWinner==1){
         document.getElementById("idRockButton").disabled=true;
         document.getElementById("idPaperButton").disabled=true;
         document.getElementById("idScissorsButton").disabled=true;
